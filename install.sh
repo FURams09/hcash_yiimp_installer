@@ -508,7 +508,11 @@ define('"'"'EXCH_YOBIT_SECRET'"'"', '"'"''"'"');
      sudo mysql --defaults-group-suffix=host1 --force < 2017-05-accounts_case_swaptime.sql
      sudo mysql --defaults-group-suffix=host1 --force < 2017-06-payouts_coinid_memo.sql
      sudo mysql --defaults-group-suffix=host1 --force < 2017-09-notifications.sql
-     
+     sudo mysql --defaults-group-suffix=host1 --force < 2017-10-bookmarks.sql
+     sudo mysql --defaults-group-suffix=host1 --force < 2017-11-segwit.sql
+     sudo mysql --defaults-group-suffix=host1 --force < 2018-01-stratums_ports.sql
+     sudo mysql --defaults-group-suffix=host1 --force < 2018-02-coins_getinfo.sql
+     sudo mysql --defaults-group-suffix=host1 --force < 2018-03-decred-info.sql
     clear
     output "Generating a basic serverconfig.php"
     output ""
@@ -545,7 +549,7 @@ define('"'"'YAAMP_ADMIN_EMAIL'"'"', '"'"''"${EMAIL}"''"'"');
 define('"'"'YAAMP_ADMIN_IP'"'"', '"'"''"${Public}"''"'"'); // samples: "80.236.118.26,90.234.221.11" or "10.0.0.1/8"
 define('"'"'YAAMP_ADMIN_WEBCONSOLE'"'"', true);
 define('"'"'YAAMP_NOTIFY_NEW_COINS'"'"', true);
-define('"'"'YAAMP_DEFAULT_ALGO'"'"', '"'"'x11'"'"');
+define('"'"'YAAMP_DEFAULT_ALGO'"'"', '"'"'blake256'"'"');
 define('"'"'YAAMP_USE_NGINX'"'"', true);
 // Exchange public keys (private keys are in a separate config file)
 define('"'"'EXCH_CRYPTOPIA_KEY'"'"', '"'"''"'"');
