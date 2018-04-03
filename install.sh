@@ -25,6 +25,8 @@ clear
 output "Make sure you double check before hitting enter! Only one shot at these!"
 output ""
     read -e -p "Enter time zone (e.g. America/New_York) : " TIME
+    echo "Current IP :"
+    echo curl ifconfig.me
     read -e -p "Server name (no http:// or www. just example.com) : " server_name
     read -e -p "Enter support email (e.g. admin@example.com) : " EMAIL
     read -e -p "Set stratum to AutoExchange? i.e. mine any coinf with BTC address? [y/N] : " BTC
